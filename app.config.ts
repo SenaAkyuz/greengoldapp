@@ -13,6 +13,12 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     name: "GreenGoldApp",
     slug: "greengoldapp",
     owner: "ordinos-team",
+    extra: {
+      ...config.extra,
+      eas: {
+        projectId: "95a25705-c6b6-4681-883b-e005c0423946",
+      },
+    },
     plugins,
     ios: {
       ...config.ios,
